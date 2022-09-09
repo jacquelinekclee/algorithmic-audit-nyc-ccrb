@@ -59,7 +59,20 @@ In the first, investigatory paper, data on arrests in NYC and stop, question, an
 A simple logistic regression model with with L2 regularization was used to model the CCRB's decision process. To train the model, a simple 75%-25% train-test split was used. To combat the class imbalance present (only about 25% of complaints were deemed substantiated), the `class_weight` hyperparameter, which assigns a weight to each class that the model uses for penalizing, was used. In order to determine the proper decision thereshold, different utility functions were compared, ultimately leading to a threshold of 0.527 instead of the default 0.5. This means that anything that the model classifies points as substantiated if the resulting regression prediction is at least 0.527. See the paper for more details. 
 
 ## Features
-The features used in the model are `contact_reason` (or text indicating why the officer approached the civilian), `mos_ethinicity` (officer’s ethnicity), rank_incident (officer’s rank at time of incident), `mos_gender` (officer’s gender), `complainant_gender` (complainant’s gender), `mos_age_incident` (officer’s age at time of incident), `complainant_age_incident` (complainant’s age at time of incident). `borough` (the borough in which the incident took place), `black` (whether the complainant is Black), `allegation` (brief description of the allegation), `fado_type` (type of complaint), and time/date related features (`month_received`, `year_received`, `month_closed`, and `year_closed`). All categorical features except allegation and fado_type were one-hot encoded while the exceptions were ordinal encoded. The numerical features were scaled. 
+The features used in the model are: 
+- `contact_reason` (or text indicating why the officer approached the civilian)
+- `mos_ethinicity` (officer’s ethnicity), rank_incident (officer’s rank at time of incident)
+- `mos_gender` (officer’s gender)
+- `complainant_gender` (complainant’s gender)
+- `mos_age_incident` (officer’s age at time of incident)
+- `complainant_age_incident` (complainant’s age at time of incident)
+- `borough` (the borough in which the incident took place)
+- `black` (whether the complainant is Black)
+- `allegation` (brief description of the allegation)
+- `fado_type` (type of complaint)
+- time/date related features (`month_received`, `year_received`, `month_closed`, and `year_closed`)
+
+All categorical features except allegation and fado_type were one-hot encoded while the exceptions were ordinal encoded. The numerical features were scaled. 
 
 ## Evaluation Metrics
 The class imbalance makes accuracy ill-suited for this model, so the F1 score was used instead. The test performance metrics for all groups is as follows:
