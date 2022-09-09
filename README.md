@@ -79,6 +79,14 @@ To try and improve these metrics for fairness, 2 different threshold tests were 
 
 Depending on what is most important to the decision-making body (CCRB), different threshold(s) would be chosen. Maximizing utility overall enforces equality for all complainants, while maximizing utility for each group is more equitable. Satisfying demographic parity ensures that substantiation doesn’t depend on complainant ethnicity. Equality of odds would focus on ensuring that the chance of obtaining the benefit of substantiation is equal across groups, while predictive value parity focuses on ensuring deserving complainants receive substantiation and underserving complainants don’t.
 
+	Threshold for Black Complainants	Threshold for non-Black Complainants	Test	Demographic Parity	Equality of Odds	Predictive Value Parity
+|    |   Threshold for Black Complainants |   Threshold for non-Black Complainants | Test                            | Demographic Parity   | Equality of Odds     | Predictive Value Parity   |
+|---:|-----------------------------------:|---------------------------------------:|:--------------------------------|:---------------------|:---------------------|:--------------------------|
+|  0 |                              0.527 |                                  0.527 | Max utility overall             | Not satisfied        | Not satisfied        | Satisfied                 |
+|  1 |                              0.522 |                                  0.546 | Max utility per group           | Satisfied            | Satisfied            | Not satisfied             |
+|  2 |                              0.522 |                                  0.541 | Enforce equality of odds        | N/A                  | *Strictly* satisfied | N/A                       |
+|  3 |                              0.522 |                                  0.535 | Enforce predictive value parity | N/A                  | N/A                  | Not satisfied             |
+
 [(Back to top)](#table-of-contents)
 
 # Conclusion
