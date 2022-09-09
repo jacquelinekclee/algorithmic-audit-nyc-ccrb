@@ -42,11 +42,11 @@ The potential inequity I investigated involves the "disposition" of a given comp
 [(Back to top)](#table-of-contents)
 
 # The Data
-The data originally comes from [ProPublica](https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers) and contains information regarding complaints made starting in 1985 up to 2020. The model uses data starting in 2000 because key demographic features like complainant ethnicity were not tracked before then. All complaints include the type of complaint made, the precinct in which the alleged action took place, demographics on the complainant, and demographics on the accused officer. See [allegations.csv]() and [allegations_cleaned.csv]().
+The data originally comes from [ProPublica](https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers) and contains information regarding complaints made starting in 1985 up to 2020. The model uses data starting in 2000 because key demographic features like complainant ethnicity were not tracked before then. All complaints include the type of complaint made, the precinct in which the alleged action took place, demographics on the complainant, and demographics on the accused officer. See [allegations.csv](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/ca06036fecf6efa016e9cd8de1fe9637768bffa5/allegations.csv) and [allegations_cleaned.csv](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/ca06036fecf6efa016e9cd8de1fe9637768bffa5/allegations_cleaned.csv).
 
 ## Additional Data
 
-Borough was not a column initially included in the dataset, so the precincts were mapped to their apporpriate boroughs using data pulled from the [NYPD's website](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page). See [precinct_boroughs.csv]() 
+Borough was not a column initially included in the dataset, so the precincts were mapped to their apporpriate boroughs using data pulled from the [NYPD's website](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page). See [precinct_boroughs.csv](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/ca06036fecf6efa016e9cd8de1fe9637768bffa5/precinct_borough.csv) 
 
 In order to understand the different categories of complaints and the potential consequences an officer may face, I referenced the [CCRB's rules](https://www1.nyc.gov/assets/ccrb/downloads/pdf/about_pdf/Title38-A_20210526.pdf). This information was used in feature engineering. 
 
