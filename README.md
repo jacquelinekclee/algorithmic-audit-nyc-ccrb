@@ -1,11 +1,13 @@
-# Algorithmic Audit: Analyzing the Fairness and Potential Inequities in the Review of Civilian Complaints to the NYPD
+# Algorithmic Audit: Modeling the New York City Civilian Complaint Review Board and Auditing the Model Fairness
 
 ![banner](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/e6fe2eb9f6dbe7af249f0bac74fd1296b2e5d088/Screen%20Shot%202022-09-08%20at%205.37.33%20PM.png)
 
 [CCRB logo](https://www1.nyc.gov/assets/ccrb/images/content/pages/board-members/image_missing.png), [NYPD logo](https://en.wikipedia.org/wiki/New_York_City_Police_Department)
 
-## [For Full Paper, Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/aa536a7c4a71f71eaf114cd817be665e8a0b5252/paper2.pdf)
-Please note that this README functions only as an overview of the work done!
+## For Full Paper, [Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/aa536a7c4a71f71eaf114cd817be665e8a0b5252/paper2.pdf). For Paper Covering The Background/Invesitgation of Inequity (Paper 1), [Click Here](
+Please note that this README functions only as an overview of the work done! Please take a look at the final papers (linked above) or their corresponding Python notebooks:
+- [Algorithmic Audit Python Notebook Link](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/4120ace9bea5f2d2045f8d984f68f158b23f94f9/Paper%202%20-%20Modeling%20the%20New%20York%20City%20Civilian%20Complaint%20Review%20Board%20and%20Auditing%20the%20Model%20Fairness.ipynb)
+- [Inequities in Civilian Complaints to the NYPD Link](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/4120ace9bea5f2d2045f8d984f68f158b23f94f9/Paper%201%20-%20Inequities%20in%20Civilian%20Complaints%20to%20the%20NYPD.ipynb)
 
 # Table of contents
 
@@ -40,11 +42,15 @@ The potential inequity I investigated involves the "disposition" of a given comp
 [(Back to top)](#table-of-contents)
 
 # The Data
-The data originally comes from [ProPublica](https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers) and contains information regarding complaints made starting in 1985 up to 2020. The model uses data starting in 2000 because key demographic features like complainant ethnicity were not tracked before then. All complaints include the type of complaint made, the precinct in which the alleged action took place, demographics on the complainant, and demographics on the accused officer. 
+The data originally comes from [ProPublica](https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers) and contains information regarding complaints made starting in 1985 up to 2020. The model uses data starting in 2000 because key demographic features like complainant ethnicity were not tracked before then. All complaints include the type of complaint made, the precinct in which the alleged action took place, demographics on the complainant, and demographics on the accused officer. See [allegations.csv]() and [allegations_cleaned.csv]().
 
 ## Additional Data
 
-Borough was not a column initially included in the dataset, so the precincts were mapped to their apporpriate boroughs using data pulled from the [NYPD's website](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page). In order to understand the different categories of complaints and the potential consequences an officer may face, I referenced the [CCRB's rules](https://www1.nyc.gov/assets/ccrb/downloads/pdf/about_pdf/Title38-A_20210526.pdf). This information was used in feature engineering. 
+Borough was not a column initially included in the dataset, so the precincts were mapped to their apporpriate boroughs using data pulled from the [NYPD's website](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page). See [precinct_boroughs.csv]() 
+
+In order to understand the different categories of complaints and the potential consequences an officer may face, I referenced the [CCRB's rules](https://www1.nyc.gov/assets/ccrb/downloads/pdf/about_pdf/Title38-A_20210526.pdf). This information was used in feature engineering. 
+
+In the first, investigatory paper, data on arrests in NYC and stop, question, and frisk patterns were investigated. Please visit [this link](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u) for the arrests data and [this link](https://data.cityofnewyork.us/Public-Safety/The-Stop-Question-and-Frisk-Data/ftxv-d5ix) for the stop, question, and frisk data. 
 
 [(Back to top)](#table-of-contents)
 
