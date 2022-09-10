@@ -16,7 +16,7 @@ Please note that this README functions only as an overview of the work done! Ple
 - [The Data](#the-data)
 - [The Logistic Regression Model](#the-logistic-regression-model)
 - [Overview of Parity Measures and Fairness Results](#overview-of-parity-measures-and-fairness-results)
-- [Findings and Conclusion](#findings-and-conclusion)
+- [Conclusion](#conclusion)
 
 # Background
 This paper and analysis was done during Spring 2022 as part of the course [DSC 167](https://afraenkel.github.io/fairness-algo-decision/): Fairness and Algorithmic Decision Making at UC San Diego's Halıcıoğlu Data Science Institute. The purpose of the assignment and aim of this paper was to find a system or mechanism that has a potential inequity, model the decision making process, and evaluate/audit this model using parity measures and frameworks of distributive justice. I hope that this paper can teach data scientists or those interested in the field about how ethics and fairness come into play in data science and the algorithms us data scientists create. 
