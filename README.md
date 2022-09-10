@@ -4,7 +4,9 @@
 
 [CCRB logo](https://www1.nyc.gov/assets/ccrb/images/content/pages/board-members/image_missing.png), [NYPD logo](https://en.wikipedia.org/wiki/New_York_City_Police_Department)
 
-## For Full Paper, [Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/aa536a7c4a71f71eaf114cd817be665e8a0b5252/paper2.pdf). For Paper Covering The Background/Invesitgation of Inequity (Paper 1), [Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/08a597c91e40e83a4332684390dc4a4e5afbdf06/paper1.pdf)
+## For Full Paper, [Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/aa536a7c4a71f71eaf114cd817be665e8a0b5252/paper2.pdf). 
+
+## For Paper Covering The Background/Invesitgation of Inequity (Paper 1), [Click Here](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/08a597c91e40e83a4332684390dc4a4e5afbdf06/paper1.pdf)
 Please note that this README functions only as an overview of the work done! Please take a look at the final papers (linked above) or their corresponding Python notebooks:
 - [Algorithmic Audit Python Notebook Link](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/4120ace9bea5f2d2045f8d984f68f158b23f94f9/Paper%202%20-%20Modeling%20the%20New%20York%20City%20Civilian%20Complaint%20Review%20Board%20and%20Auditing%20the%20Model%20Fairness.ipynb)
 - [Inequities in Civilian Complaints to the NYPD Link](https://github.com/jacquelinekclee/algorithmic-audit-nyc-ccrb/blob/4120ace9bea5f2d2045f8d984f68f158b23f94f9/Paper%201%20-%20Inequities%20in%20Civilian%20Complaints%20to%20the%20NYPD.ipynb)
